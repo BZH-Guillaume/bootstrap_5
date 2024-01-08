@@ -9,14 +9,17 @@
 </head>
  <!-- COULEURS -->
 <body class="bg-dark h-100">  <!-- bg-dark = background dark, h-100 = hauteur 100% -->
-    <p class="text-white px-2">Ceci est un test</p> <!-- text-white = texte blanc -->
+    <p class="text-white px-2">Afficher le code source pour voir l'utilisation et la description des classes Bootstrap !</p> <!-- text-white = texte blanc -->
     <div class="bg-primary w-auto mb-3 pt-3 pb-4 px-2"> <!-- bg-primary = background primary, w-auto = largeur auto, mx-2 = margin x 2, pt-3 = padding top 3, pb-4 = padding bottom 4, px-2 = padding x 2 -->
         <p class="text-white">Ceci est un test</p> <!--  text-white = texte blanc -->
     </div>
 
 <!-- ALIGNEMENT -->
     <div class="bg-success">
-        <p class="text-white px-2">Options d'aligement du texte</p>
+        <p class="text-white px-2">Options d'aligement du texte</p> <!-- text-white = texte blanc, fonctionne avec toutes les couleurs bootstrap -->
+        <!-- Couleurs Bootstrap 
+        
+        -->
         <div class="text-center"><p>Alignement classique</p></div> <!-- text-center = texte centré | text-start = aligné à gauche | text-end = aligné à droite -->
     </div>
 <!--Les Breakpoints-->
@@ -30,6 +33,40 @@
         md : 768px à 992px
         lg : 992px à 1200px
         xl : 1200px et plus -->
+    </div>
+
+    <!-- Les transformations de texte -->
+    <div class="bg-danger">
+            <p class="text-uppercase text-white">Texte en switché majuscule</p> <!-- text-uppercase = texte en majuscule -->
+            <p class="text-lowercase text-white">Texte en switché minuscule</p> <!-- text-lowercase = texte en minuscule -->
+            <p class="text-capitalize text-white">Texte avec la première lettre en majuscule</p> <!-- text-capitalize = texte avec la première lettre en majuscule -->
+    </div>
+
+    <!-- Bordures et décorations -->
+    <div class="bg-info">
+        <p ><a href="#" class="text-decoration-none text-white">Gérer les bordures de décoration</a></p>
+        <!-- text-decoration-none = enlève la décoration du lien (le souligné)
+        text-decoration-underline = souligne le lien
+        text-decoration-line-through = barre le lien
+        -->
+    </div>
+
+    <div class="bg-secondary">
+        <p class="text-white text-white"> Mise en forme du texte</p>
+        <p class="text-white fw-bold">Gras</p>
+        <p class="text-white fw-normal">Normal</p>
+        <p class="text-white fw-light">Léger</p>
+        <p class="text-white fst-italic">Italique</p> <!--A condition que l'italique existe pour la typo choisie-->
+        <p class="text-white fw-bolder">Plus gras</p>
+    </div>
+
+    <div class="bg-success text-white">
+        <p class="">Les typos dans de Bootstrap</p>
+        <h1>Titre H1</h1>
+        <p class="h1">Simulacre de titre h1</p> <!--Donne l'aspect d'un titre mais en respectant la règle SEO d'un seul H1 par page-->
+        <p class="display-1">Display 1 </p>
+        <p class="lead">Permet de mettre un sous titre</p>
+        <!--Bootstrap ne permet pas vraiment de changer la typo, en revanche un grand nombre de style peuvent etre appliqués pour un résultat élégant-->
     </div>
 </body>
 </html>
