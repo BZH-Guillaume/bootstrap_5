@@ -8,8 +8,8 @@
     <title>Module Bootstrap 5</title>
 </head>
  <!-- COULEURS -->
-<body class="bg-dark h-100">  <!-- bg-dark = background dark, h-100 = hauteur 100% -->
-    <p class="text-white px-2">Afficher le code source pour voir l'utilisation et la description des classes Bootstrap !</p> <!-- text-white = texte blanc -->
+<body class="bg-light h-100 mx-2 px-2">  <!-- bg-dark = background dark, h-100 = hauteur 100% -->
+    <p class="px-2">Afficher le code source pour voir l'utilisation et la description des classes Bootstrap !</p> <!-- text-white = texte blanc -->
     <div class="bg-primary w-auto mb-3 pt-3 pb-4 px-2"> <!-- bg-primary = background primary, w-auto = largeur auto, mx-2 = margin x 2, pt-3 = padding top 3, pb-4 = padding bottom 4, px-2 = padding x 2 -->
         <p class="text-white">Ceci est un test</p> <!--  text-white = texte blanc -->
     </div>
@@ -44,7 +44,7 @@
 
     <!-- Bordures et décorations -->
     <div class="bg-info">
-        <p ><a href="#" class="text-decoration-none text-white">Gérer les bordures de décoration</a></p>
+        <p ><a href="#" class="text-decoration-none text-white">Gérer les décoration</a></p>
         <!-- text-decoration-none = enlève la décoration du lien (le souligné)
         text-decoration-underline = souligne le lien
         text-decoration-line-through = barre le lien
@@ -63,10 +63,116 @@
     <div class="bg-success text-white">
         <p class="">Les typos dans de Bootstrap</p>
         <h1>Titre H1</h1>
-        <p class="h1">Simulacre de titre h1</p> <!--Donne l'aspect d'un titre mais en respectant la règle SEO d'un seul H1 par page-->
+        <p class="h1">Les classes h1 > h6 permet un simulacre de titre h1 > h6</p> <!--Donne l'aspect d'un titre mais en respectant la règle SEO d'un seul H1 par page-->
         <p class="display-1">Display 1 </p>
-        <p class="lead">Permet de mettre un sous titre</p>
+        <p class="lead"> "lead" Permet de mettre un sous titre / une description</p>
         <!--Bootstrap ne permet pas vraiment de changer la typo, en revanche un grand nombre de style peuvent etre appliqués pour un résultat élégant-->
+    </div>
+
+    <div class="bg-warning shadow-lg mx-5 px-4">
+        <p class="text-white">Les ombres</p>
+        <!--Les ombres sont à appliquer sur les éléments qui doivent se détacher du fond
+        <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+        <div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+        <div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+        -->
+    </div>
+
+    <div class="bg-danger text-white">
+        <p>Les bordures</p>
+        <p class="border">Exemple 1</p>
+        <!--
+        border : bordure de 1px
+        border : Bordure partout
+        border-top : Bordure en haut
+        border-bottom : Bordure en bas
+        border-start : Bordure à gauche
+        border-end : Bordure à droite
+        -->
+        <p class="border border-primary"> Bordure de couleur</p>
+        <!-- On peut aussi utiliser les couleurs de bootstrap pour les bordures
+        border-primary
+        border-secondary
+        border-success
+        border-danger
+        border-warning
+        border-info
+        border-light
+        border-dark
+        border-white
+        -->
+        <!--
+        On peut ajouter des arrondis aux bordures
+        rounded : arrondi partout
+        rounded-top : arrondi en haut
+        rounded-bottom : arrondi en bas
+        rounded-start : arrondi à gauche
+        rounded-end : arrondi à droite
+        rounded-circle : arrondi en cercle
+        rounded-0 : pas d'arrondi
+        rounded-pill : arrondi en pillule
+        -->
+    </div>
+
+    <div class="bg-info position-static px-2">
+        <p>Positionnement et gestion des flottants</p>
+        <!--
+            position-static : position par défaut
+            position-relative : position relative
+            position-absolute : position absolue
+            position-fixed : position fixe
+            position-sticky : position sticky
+
+            Les flottants permettent de positionner les éléments les uns par rapport aux autres
+            float-start : flottant à gauche
+            float-end : flottant à droite
+            float-none : pas de flottant
+        -->
+    </div>
+
+    <div class="bg-primary text-white px-2">
+        <p>Rendre les iframes responsive
+            <div  class="ratio ratio-16x9"> <!-- c'est cette classe ratio qui va permettre à la video d'occuper l'intégralité de la div dans laquelle l'iframe est positionnée-->
+            <iframe src="https://www.youtube.com/embed/C3iHAgwIYtI?si=C6OBKP7-Oc1vXU2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!--
+            ratio-1x1 : ratio 1:1
+            ratio-4x3 : ratio 4:3
+            ratio-16x9 : ratio 16:9
+            ratio-21x9 : ratio 21:9
+            -->
+            </div>
+        </p>
+        
+    </div>
+    <h2 class="fw-bold">Les tableaux</h2>
+    <div>
+        <table class="mb-3 table">
+            <thead>
+                <tr class="table-primary">
+                    <th>Colonne 1</th>
+                    <th>Colonne 2</th>
+                    <th>Colonne 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ligne 1</td>
+                    <td>Ligne 1</td>
+                    <td>Ligne 1</td>
+                </tr>
+                <tr>
+                    <td>Ligne 2</td>
+                    <td>Ligne 2</td>
+                    <td>Ligne 2</td>
+                </tr>
+                <tr>
+                    <td>Ligne 3</td>
+                    <td>Ligne 3</td>
+                    <td>Ligne 3</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
